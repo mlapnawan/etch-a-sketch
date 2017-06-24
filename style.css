@@ -1,0 +1,45 @@
+.container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+table {
+	margin: 0 auto;
+	width: 700px;
+	height: 500px;
+	border: 1px solid black;
+}
+
+tr, td {
+	border: 1px solid black;
+
+}
+
+.highlight {
+	background-color: red;
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #dddddd;
+	font-size: 20px;
+}
+
+button:hover {
+	box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
+}
+
+button:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav {
+	margin-bottom: 20px;
+}
