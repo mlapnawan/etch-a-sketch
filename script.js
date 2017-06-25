@@ -1,4 +1,20 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+	// create grid
+	createGrid();
+
+	// clear button
+	$('#clear').on('click', function(){
+		$('td').removeClass('highlight');
+	});
+
+	// reset button
+	$('#reset').on('click', function(){
+		$('table').remove();
+		createGrid();
+	});
+});
+
+function createGrid(){
 	// get grid size
 	do {
 		var size = prompt("Grid Size (Integers Only)");
@@ -6,6 +22,7 @@ $(document).ready(function(){
 	var sizeInt = parseInt(size);
 
 	// create grid
+	$('.container').append('<table></table>');
 	for(var i=0; i<sizeInt; i++){		
 		$('table').append('<tr></tr>');		
 	}
@@ -14,13 +31,7 @@ $(document).ready(function(){
 	}
 
 	// highlight boxes
-   $('td').hover(function(){
-   		$(this).addClass('highlight');
-   });
-
-   // clear button
-   $('#clear').on('click', function(){
-   		$('td').removeClass('highlight');
-   });
-
-});
+	$('td').hover(function(){
+		$(this).addClass('highlight');
+	});
+}

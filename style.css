@@ -4,16 +4,15 @@
 	padding: 20px;
 }
 
+h1 {
+	font-size: 55px;
+}
+
 table {
 	margin: 0 auto;
 	width: 700px;
-	height: 500px;
-	border: 1px solid black;
-}
-
-tr, td {
-	border: 1px solid black;
-
+	height: 475px;
+	background-color: #F8F9F9;
 }
 
 .highlight {
@@ -24,7 +23,8 @@ button {
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: #dddddd;
-	font-size: 20px;
+	font-size: 16px;
+	margin-top: 5px;
 }
 
 button:hover {
@@ -42,4 +42,5 @@ a {
 
 .nav {
 	margin-bottom: 20px;
+	text-align: center;
 }
